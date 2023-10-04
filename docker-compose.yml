@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  sql_server:
+    image: sql-server-collab
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: Chocolat@123
+    ports:
+      - "1433:1433"
+    volumes:
+      - /home/thomas/Documents/mssql/volumes:/var/opt/mssql/data
+    user: mssql

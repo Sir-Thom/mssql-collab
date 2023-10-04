@@ -1,0 +1,3 @@
+CREATE LOGIN admin WITH PASSWORD = 'Chocolat@123';
+CREATE USER admin FOR LOGIN admin;
+ALTER SERVER ROLE [sysadmin] ADD MEMBER admin;
